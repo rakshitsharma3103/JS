@@ -38,3 +38,27 @@ console.log(typeof anotherId);
 //Learn the table from link -->
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//    +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive) & Heap (Non-Primitive)
+
+let myYoutubename = "rs@google.com"
+
+let anotherName = myYoutubename
+anotherName = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anotherName)
+
+let userOne = {                     // this will save in Heap
+    email : "rs31@google.com",
+    upi : "rs@oksbi"
+}
+
+let userTwo = userOne  // both have same object reference in heap, if anyone is change other also changed.
+
+userTwo.email = "rakshit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
