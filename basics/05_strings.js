@@ -24,7 +24,7 @@ console.log(anotherString);
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
-console.log(newStringOne.trim());
+console.log(newStringOne.trim());  // trim removes the whitespaces from both end.... we also have trimStart() & trimEnd() read documentation from mdn.
 
 const url = "https://hitesh.com/hitesh%20choudhary"
 
