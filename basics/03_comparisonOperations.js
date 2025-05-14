@@ -3,9 +3,9 @@ let score = "hitesh"
 //console.log(typeof score);
 //console.log(typeof(score));
 
-let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+let valueInNumber = Number(score)    //When we do Number(score), JavaScript tries to convert it to a number.
+console.log(typeof valueInNumber);  //number
+console.log(valueInNumber);      //NaN
 
 
 // "33" => 33
