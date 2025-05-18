@@ -65,7 +65,7 @@ const course = {
 // course.courseInstructor
 
 // Sometime when we need to call it multiple times so to make syntax look good we used below line to access object's key.
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course 
 
 // console.log(courseInstructor);
 console.log(instructor);
