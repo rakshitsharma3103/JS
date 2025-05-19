@@ -35,12 +35,16 @@ function loginUserMessage(username = "sam"){    // If we write username = "sam" 
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("hitesh"))  // if argument hitesh is passed then it will overwrite sam in function parameter.
 // console.log(loginUserMessage())        // As there is no argument passed in this function, so this gives undefined to the function parameter.
 
 
-function calculateCartPrice(val1, val2, ...num1){
-    return num1
+function calculateCartPrice(...num1){    // to get multiple parameters we can use rest operator here (...num1)
+    return num1                         // return an array [200, 400, 500, 2000]
+}
+
+function calculateCartPrice(val1, val2, ...num1){    // here ...num1 get all the remaining value which are not assigned by val1, val2. 
+    return num1                                      // return an array [500, 2000]
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
