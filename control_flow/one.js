@@ -10,7 +10,7 @@ const temperature = 41
 // }
 
 // console.log("Execute");
-// <, >, <=, >=, ==, !=, ===, !==     (these are some relational operator)
+// <, >, <=, >=, ==, !=, ===, !==     (these are some relational operator),  "===" check "value + datatype" both.
 
 // const score = 200
 
