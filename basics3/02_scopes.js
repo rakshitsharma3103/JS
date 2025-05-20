@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)                       // cannot access variable before initialization
+addTwo(5)                       // cannot access variable before initialization, it is accessible after variable initialization.
 const addTwo = function(num){
     return num + 2
 }
