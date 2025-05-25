@@ -15,7 +15,7 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`
+        li.innerHTML = `${langName}`                    // this traverse the DOM again and again to add the text 
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
