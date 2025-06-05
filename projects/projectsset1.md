@@ -70,6 +70,7 @@ form.addEventListener('submit', function (e) {
 const clock = document.getElementById('clock');
 // const clock = document.querySelector('#clock')
 
+//setInterval(function (){}, 1000) // This is the syntax for setInterval function keep in mind, it help to run the function at the interval we want to rn it, here 1000 is in ms so it is 1sec.
 setInterval(function () {
   let date = new Date();
   // console.log(date.toLocaleTimeString());
