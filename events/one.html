@@ -19,22 +19,30 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){    //we can use this but here .onclick gives less features.
+    // document.getElementById('owl').onclick = function(){    //we can use this but here .onclick gives less features so we use .addEventListener().
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
-    // jQuery - on
+    //** These are old approach not used now = 
+     //1. attachEvent()   
+     //2. jQuery - on
 
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+     /** STUDY ABOUT THESE - FROM MDN or from anywhere
+
+     // type, timestamp, defaultPrevented
+     // target, toElement, srcElement, currentTarget,
+     // clientX, clientY, screenX, screenY
+     // altkey, ctrlkey, shiftkey, keyCode
+     
+     */
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
-    // }, false)
+    // }, false)                                // false is a default value we can remove it.
 
+    //** Here when we click any image other then owl then above message will print but when we click owl image then first below code run then above this is Event propagation and called "Bubbling".
+    //** Now when we use true in place of false then it is called ""Capturing Mode"", in this first this print console.log("clicked inside the ul"), then console.log("owl clicked")
+    
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
