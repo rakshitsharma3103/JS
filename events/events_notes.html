@@ -1,0 +1,80 @@
+<!-- 
+JavaScript is "Synchronous" by default and single-threaded, which means it executes code line-by-line, one at a time, in order.
+
+However, JavaScript also supports "Asynchronous" behavior through:
+
+Callbacks,
+Promises,
+async/await,
+Web APIs (like setTimeout, fetch, etc.)
+
+These async features allow non-blocking operations, like:
+
+Waiting for an API response,
+Handling timers,
+Reading files (in environments like Node.js)
+
+""Example"":-
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Inside setTimeout");
+}, 2000);
+
+console.log("End");
+
+"Output":-
+Start
+End
+Inside setTimeout
+
+So in summary:
+
+🟢 JavaScript itself is synchronous
+🟠 But it can handle async operations using event loop + Web APIs. -->
+
+
+🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
+
+<!-- 🧠 "Important: Web APIs Enable Async Code"
+
+The JavaScript engine (like V8) is synchronous and runs one line at a time.
+But Web APIs allow you to offload tasks to the browser or environment to run in the background, and when the task is ready (like fetching data or waiting 3 seconds), it tells JS to continue (via event loop).
+
+🧪 Example with Web API: setTimeout
+
+console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+}, 1000);  // <-- Web API used here
+
+console.log("C");
+
+🟢 What Happens Internally:
+
+JS logs A
+setTimeout() is passed to Web API, timer starts
+JS logs C (doesn't wait)
+After 1 second, the Web API sends console.log("B") to the callback queue
+Event Loop puts it back into JS call stack when it's ready
+JS logs B
+
+🟢 Output:
+
+A
+C
+B
+
+🖼️ Analogy
+Imagine JavaScript is a chef with only one hand (single-threaded). When the chef sets a timer (setTimeout), he tells a helper (Web API) to watch the clock while he continues cooking.
+When the timer rings, the helper (Web API) taps the chef and says "Hey! Time’s up!"—and only then the chef executes the next step.
+
+✅ Summary
+JavaScript itself does not have features like setTimeout or fetch.
+These features are part of the Web APIs provided by the browser (or Node.js).
+Web APIs let JavaScript run asynchronous code without blocking the main thread.
+They work along with the Event Loop and Callback Queue to manage async execution. 
+
+🟢🟢 DIAGRAM - Check ScreenShot (6410) in laptop.
+-->
