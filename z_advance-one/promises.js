@@ -39,7 +39,7 @@ const promiseFour = new Promise(function(resolve, reject){
         if (!error) {
             resolve({username: "hitesh", password: "123"})
         } else {
-            reject('ERROR: Something went wrong')
+            reject('ERROR: Something went wrong')               // reject helps to give error
         }
     }, 1000)
 })
@@ -48,7 +48,7 @@ const promiseFour = new Promise(function(resolve, reject){
  .then((user) => {
     console.log(user);
     return user.username
-}).then((username) => {
+}).then((username) => {                     // this is called "Chaining", here the data/value return from above .then is used by next .then
     console.log(username);
 }).catch(function(error){
     console.log(error);
