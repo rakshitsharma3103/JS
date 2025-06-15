@@ -1,7 +1,7 @@
 let score = "hitesh"
 
-//console.log(typeof score);
-//console.log(typeof(score));
+//console.log(typeof score);  //string
+//console.log(typeof(score)); // string
 
 let valueInNumber = Number(score)    //When we do Number(score), JavaScript tries to convert it to a number.
 console.log(typeof valueInNumber);  //number
