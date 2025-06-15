@@ -15,7 +15,7 @@ console.log(valueInNumber);      //NaN
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+ // console.log(booleanIsLoggedIn);             // true
 
 // 1 => true; 0 => false
 // "" => false
@@ -24,8 +24,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// console.log(stringNumber);           //33
+// console.log(typeof stringNumber);    //string
 
 // *********************** Operations ***********************
 
