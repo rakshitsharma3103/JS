@@ -5,14 +5,25 @@ const repoCount = 50
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
-const gameName = new String('hitesh-hc-com')
+const gameName = new String('hitesh-hc-com')  // String object created it is not a primitive string
+const gname = 'Rakshit'          // this is primitive string not a object
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+// console.log(typeof gameName)        // object
+// console.log(typeof gname)           // string
 
+console.log(gameName[0]);
+console.log(gameName.__proto__);        // What is __proto__?
+//                                          It's a reference to the prototype object from which gameName inherits methods and properties.
+//                                          Since gameName is a String object, its __proto__ points to String.prototype.
+//                                          This prototype contains all the string methods like:
+//                                          toUpperCase()
+//                                          slice()
+//                                          includes()
+//                                          charAt(), etc.
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
+
 console.log(gameName.charAt(6));
 console.log(gameName.indexOf('t'));
 
