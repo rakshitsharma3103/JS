@@ -30,7 +30,7 @@ console.log(gameName.indexOf('t'));
 const newString = gameName.substring(0, 4)  // substring can also run with -ve value but treat it as 0 
 console.log(newString);
 
-const anotherString = gameName.slice(-8, 4)  // slice also take negative values
+const anotherString = gameName.slice(-8, 4)  // slice also take negative values  (-8 from end.)
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
@@ -41,6 +41,6 @@ const url = "https://hitesh.com/hitesh%20choudhary"
 
 console.log(url.replace('%20', '-'))
 
-console.log(url.includes('sundar'))
+console.log(url.includes('rakshit'))
 
 console.log(gameName.split('-'));
