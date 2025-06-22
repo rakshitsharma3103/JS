@@ -2,17 +2,22 @@ const score = 400
 // console.log(score);
 
 const balance = new Number(100)
-// console.log(balance);
+// console.log(balance);       //new Number(100) creates a Number object, not a primitive.
+//                               console.log(balance) will show it as Number {100}.
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toString().length);     //3
+// console.log(balance.toFixed(1));            // 100.0
 
 const otherNumber = 123.8966
 
-// console.log(otherNumber.toPrecision(4));
+console.log(otherNumber.toPrecision(4));    // 123.9
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString('en-IN'));      // ('en-IN' = English, India locale).
+
+const money = 123456.78;
+console.log(money.toLocaleString('en-IN', { style: 'currency', currency: 'INR' }));    // Output: ₹1,23,456.78 (Currency code is required with currency style.)
+
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
