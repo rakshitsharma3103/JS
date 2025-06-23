@@ -11,8 +11,9 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-
-console.log(id === anotherId);
+// Even though both symbols have the same description '123', each Symbol() call creates a unique and different value.
+// Symbols are guaranteed to be unique, even if they have the same description.
+console.log(id === anotherId);  // false
 
 // const bigNumber = 3456543576654356754n
 
