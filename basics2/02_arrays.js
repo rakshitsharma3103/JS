@@ -1,15 +1,15 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros)          // push directly makes change in original array
+// marvel_heros.push(dc_heros)          // push directly makes change in original array, Pushes the entire dc_heros array as a single element into marvel_heros.
 
 // console.log(marvel_heros);
-// console.log(marvel_heros[3][1]);
+// console.log(marvel_heros[3][1]);         //flash
 
-// const allHeros = marvel_heros.concat(dc_heros)          // Concat do not change original array it need to store in new place.
-// console.log(allHeros);
+const allHeros = marvel_heros.concat(dc_heros)          // Concat do not change original array it need to store in new place.
+console.log(allHeros);
 
-const all_new_heros = [...marvel_heros, ...dc_heros]       // This is called "Spread"
+const all_new_heros = [...marvel_heros, ...dc_heros]       // This is called "Spread" , best way to merge two arrays.
 
 // console.log(all_new_heros);
 
