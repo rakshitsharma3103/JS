@@ -28,7 +28,7 @@ const JsUser = {
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)     // After freezing object no change propagate .
 JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
