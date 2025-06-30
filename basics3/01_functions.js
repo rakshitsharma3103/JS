@@ -8,7 +8,7 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+sayMyName()
 
 // function addTwoNumbers(number1, number2){
 
@@ -36,7 +36,7 @@ function loginUserMessage(username = "sam"){    // If we write username = "sam" 
 }
 
 // console.log(loginUserMessage("hitesh"))  // if argument hitesh is passed then it will overwrite sam in function parameter.
-// console.log(loginUserMessage())        // As there is no argument passed in this function, so this gives undefined to the function parameter.
+// console.log(loginUserMessage())        // As there is no argument passed in this function, so this gives undefined to the function parameter, but as we mentioned username as sam in function argument so it will not be undefined.
 
 
 function calculateCartPrice(...num1){    // to get multiple parameters we can use rest operator here (...num1)
@@ -58,7 +58,7 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
+// handleObject(user)       // here we pass an object to function.
 
 handleObject({          // This is how we can pass object directly
     username: "sam",
