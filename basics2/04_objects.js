@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.fullname.userfullname.firstname);
+console.log(regularUser.fullname.userfullname.firstname);       //hitesh
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -48,9 +48,9 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
@@ -67,7 +67,7 @@ const course = {
 // Sometime when we need to call it multiple times so to make syntax look good we used below line to access object's key.
 const {courseInstructor: instructor} = course 
 
-// console.log(courseInstructor);
+// console.log(courseInstructor);   // Error Shows corseInstructor is not defined.
 console.log(instructor);
 
 // {                        // JSON Format
