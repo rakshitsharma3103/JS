@@ -17,7 +17,7 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);      //In this case this.username prints "undefined", so from this we know that this work with object and not in function like this.
+//     console.log(this.username);      //In this case this.username prints "undefined", so from this we know that "this" work with object and not in function like this.
                                         // this in a regular function call (chai()) refers to the "global object" (or undefined in strict mode). So in regular function we cannot use this keyword
                                         // this.username looks for a property on the global object — not local variables. 
 //  }
