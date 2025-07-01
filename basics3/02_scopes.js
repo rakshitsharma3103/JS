@@ -27,18 +27,18 @@ function one(){
      two()
 }
 
-// one()
+one()
 
 if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-        // console.log(username + website);
+        console.log(username + website);        // hitesh youtube
     }
     // console.log(website);
 }
 
-// console.log(username);
+console.log(username);
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)                       // cannot access variable before initialization, it is accessible after variable initialization.
+// addTwo(5)                       // cannot access variable before initialization, it is accessible after variable initialization.
 const addTwo = function(num){
     return num + 2
 }
