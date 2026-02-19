@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive :- Stores the value.
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -19,7 +19,7 @@ console.log(id === anotherId);  // false
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive) :-They store the address (reference) of data, not the actual value.
 
 // Array, Objects, Functions
 
