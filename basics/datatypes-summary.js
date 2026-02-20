@@ -44,13 +44,15 @@ console.log(typeof anotherId);
 //    +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Stack(Primitive) & Heap (Non-Primitive)
 
+// Jo Primitive type data h vo Stack me store hoga and jo Non-Premitive h vo Heap me store hoga and unka internal memory management neeche explained h.
+
 let myYoutubename = "rs@google.com"
 
-let anotherName = myYoutubename
+let anotherName = myYoutubename        // here it will store in stack and a copy of myYoutubename is given not the original one so any change in anotherName will not reflect in myYoutubename.
 anotherName = "chaiaurcode"
 
-console.log(myYoutubename)
-console.log(anotherName)
+console.log(myYoutubename)        // rs@google.com
+console.log(anotherName)          // chaiaurcode
 
 let userOne = {                     // this will save in Heap
     email : "rs31@google.com",
