@@ -10,7 +10,7 @@ function sayMyName(){
 
 sayMyName()
 
-// function addTwoNumbers(number1, number2){
+// function addTwoNumbers(number1, number2){        // function defination me jo number1, number2 h vo parameters h
 
 //     console.log(number1 + number2);
 // }
