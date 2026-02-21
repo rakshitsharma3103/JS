@@ -14,6 +14,7 @@ sayMyName()
 
 //     console.log(number1 + number2);
 // }
+//    const result = addTwoNumbers(3, 5)        // is case me kyoki hmne function se kuch return nhi kiya isliye result ki value undefined rhegi.
 
 function addTwoNumbers(number1, number2){
 
@@ -22,7 +23,7 @@ function addTwoNumbers(number1, number2){
     return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5)        // Now in this case as we have done return in function then result get the value 8.
 
 // console.log("Result: ", result);
 
