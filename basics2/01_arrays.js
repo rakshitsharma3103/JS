@@ -1,4 +1,7 @@
 // array
+// JS array copy operation creates Shallow copy rather than Deep copy.
+// Shallow copy -> In this it shares/ points to the same reference.
+// Deep Copy -> In this it does not points to the same reference.
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "ironman"]
