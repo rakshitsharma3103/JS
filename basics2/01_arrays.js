@@ -15,7 +15,7 @@ myArr.push(6)
 myArr.push(7)
 myArr.pop()         // 7 popped out
 
-// myArr.unshift(9)      // add 9 in start of array
+// myArr.unshift(9)      // add 9 in start of array , it is less optimized when array length is very large as we have to shift all elements of array to insert new element in first.
 // myArr.shift()         // remove array element from start.
 
 console.log(myArr.includes(9));     // checks for 9 in the array if it includes return true otherwise false.
