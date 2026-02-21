@@ -54,7 +54,7 @@ console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-// Destructuring in Objects
+// Destructuring in Objects :- Destructuring is used to extract values from objects or arrays in a clean, readable, and efficient way.
 
 const course = {
     coursename: "js in hindi",
@@ -65,7 +65,7 @@ const course = {
 // course.courseInstructor
 
 // Sometime when we need to call it multiple times so to make syntax look good we used below line to access object's key.
-const {courseInstructor: instructor} = course 
+const {courseInstructor: instructor} = course         //Jab {} assignment ke left side me ho aur object se values nikal rahe ho, to yha {} = object destructuring
 
 // console.log(courseInstructor);   // Error Shows corseInstructor is not defined.
 console.log(instructor);
