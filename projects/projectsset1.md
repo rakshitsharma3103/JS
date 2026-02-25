@@ -14,7 +14,7 @@ const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
   console.log(button);
-  button.addEventListener('click', function (e) {
+  button.addEventListener('click', function (e) {    // hme event listener ko batana padta h ki kis condition me event listen krna h, yha hm click krne pr listen krenge.
     console.log(e);
     console.log(e.target);
     if (e.target.id === 'grey') {
@@ -46,7 +46,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const height = parseInt(document.querySelector('#height').value);
+  const height = parseInt(document.querySelector('#height').value);    // yha jo value milegi vo string me hogi isliye parseInt kiya h taki value int me convert ho jaye.
   const weight = parseInt(document.querySelector('#weight').value);
   const results = document.querySelector('#results');
 
