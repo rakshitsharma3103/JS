@@ -13,15 +13,15 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
+    function addLanguage(langName){                    // this traverse the DOM again and again to add the text, which is not optimize in case of large data.
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`                    // this traverse the DOM again and again to add the text 
+        li.innerHTML = `${langName}`                    
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
     addLanguage("typescript")
 
-    function addOptiLanguage(langName){             // this is optimised function to add language 
+    function addOptiLanguage(langName){             // this is optimised function to add language, in this case traverse of all values to add text is not required.
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
