@@ -5,7 +5,7 @@ const user = {
 
     getUserDetails: function(){
         //console.log("Got user details from database");
-        // console.log(`Username: ${this.username}`);
+        // console.log(`Username: ${this.username}`);   // this keyword used for access value from current context. If we do not use this keyword here and try to directly access username then it will not take, because it doesnot know which username we are talking about.
         console.log(this);
     }
 
