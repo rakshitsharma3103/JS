@@ -1,4 +1,11 @@
 // Promise creation
+
+/*Q: What is a Promise?
+    Promise is an object that represents the eventual completion or failure of an asynchronous operation.
+  Q: Why promises?
+    To avoid callback hell and handle async code in a cleaner way.
+*/
+
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
