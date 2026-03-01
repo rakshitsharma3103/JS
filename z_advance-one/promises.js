@@ -4,6 +4,7 @@
     Promise is an object that represents the eventual completion or failure of an asynchronous operation.
   Q: Why promises?
     To avoid callback hell and handle async code in a cleaner way.
+    CallBack Hell -> Callback hell tab hota hai jab multiple asynchronous callbacks ek-dusre ke andar nested ho jaate hain, jisse code unreadable aur unmanageable ban jaata hai.
 */
 
 const promiseOne = new Promise(function(resolve, reject){
